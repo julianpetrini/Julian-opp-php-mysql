@@ -39,29 +39,31 @@ $firstQuestion = $questions[0];
 $secondQuestion= $questions[1];
 $thirdQuestion= $questions[2];
 
-//ANSWERS
+//ANSWERS FROM QUESTION 1 
 $query=$dbConnection->query("SELECT * FROM Answers");
 $answers=$query->fetchAll(PDO::FETCH_ASSOC);
 
-//For question 1
+//Text For options (of answers) in question 1
 $a1=$answers[0];
 $a2=$answers[1];
 $a3=$answers[2];
-//For question 2
 
-$query=$dbConnection->query("SELECT text FROM Answers WHERE QuestionID = 1");
-$respuestas1=$query->fetchAll(PDO::FETCH_ASSOC);
-$answer1=$respuestas1[0];
-$answer1=$respuestas1[1];
-$answer1=$respuestas1[2];
-
-
-
-//For question 3
+$valora1=intval($a1 ['IsCorrectAnswer']);
+//For options (of answers) question 2
+$query=$dbConnection->query("SELECT * FROM Answers WHERE QuestionID = 2");
+$respuestas2=$query->fetchAll(PDO::FETCH_ASSOC);
+$answer21=$respuestas2[0];
+$answer22=$respuestas2[1];
+//For options (of answers) question 3
+$query=$dbConnection->query("SELECT * FROM Answers WHERE QuestionID = 3");
+$respuestas3=$query->fetchAll(PDO::FETCH_ASSOC);
+$answer31=$respuestas3[0];
+$answer32=$respuestas3[1];
+$answer33=$respuestas3[2];
+$answer34=$respuestas3[3];
+$answer35=$respuestas3[4];
 
 ?>
-
-
 <!--NAVBAR-->
 
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #e8ac19; font-family: 'Fredoka One'">

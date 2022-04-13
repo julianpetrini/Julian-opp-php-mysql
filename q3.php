@@ -5,12 +5,16 @@
             <div class="text-white text-center">
             <?php echo '<h1 class="mb-3 text-center color-texto">' . $thirdQuestion['Text'] . '</h1>' ?>
             <form action="result.php" method="post">
-                <input type="checkbox" name="" id="q1">
-                <label for="q1">a1</label>
-                <input type="checkbox" name="" id="q2">
-                <label for="q2">a2</label>
-                <input type="checkbox" name="" id="q3">
-                <label for="q3">a3</label>
+                <input type="checkbox" name="q3" id="q3">
+                <label for="q1"><?php echo '<h4 class="mb-3 text-center color-texto">' . $answer31 ['text'] . '</h4>' ?></label>
+                <input type="checkbox" name="q3" id="q3">
+                <label for="q2"><?php echo '<h4 class="mb-3 text-center color-texto">' . $answer32 ['text'] . '</h4>' ?></label>
+                <input type="checkbox" name="q3" id="q3">
+                <label for="q3"><?php echo '<h4 class="mb-3 text-center color-texto">' . $answer33 ['text'] . '</h4>' ?></label>
+                <input type="checkbox" name="q3" id="q3">
+                <label for="q3"><?php echo '<h4 class="mb-3 text-center color-texto">' . $answer34 ['text'] . '</h4>' ?></label>
+                <input type="checkbox" name="q3" id="q3">
+                <label for="q3"><?php echo '<h4 class="mb-3 text-center color-texto">' . $answer35 ['text'] . '</h4>' ?></label>
                 <br>
                 <button type="submit" class="btn btn-outline-light btn-danger">Submit</button>
             </form>
