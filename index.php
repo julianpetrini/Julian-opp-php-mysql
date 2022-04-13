@@ -1,6 +1,5 @@
 <body>
     <?php include 'header.php';?>
-
     <div class="bg-image background-image" alt="">
         <div class="d-flex justify-content-center align-items-center h-100">
             <div class="text-white text-center">
@@ -11,4 +10,3 @@
     </div>
     <?php include 'footer.php'?>
 </body>
-</html>

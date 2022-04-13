@@ -4,8 +4,7 @@
         <div class="d-flex justify-content-center align-items-center h-100">
             <div class="text-white text-center">
             <h1 class="mb-3 text-center color-texto">RESULT'S</h1>
-          
-        </div>
+       </div>
     </div>
     <?php include 'footer.php'?>
 </body>

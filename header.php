@@ -40,15 +40,24 @@ $secondQuestion= $questions[1];
 $thirdQuestion= $questions[2];
 
 //ANSWERS
-$query=$dbConnection->query("SELECT text FROM Answers");
+$query=$dbConnection->query("SELECT * FROM Answers");
 $answers=$query->fetchAll(PDO::FETCH_ASSOC);
 
+//For question 1
 $a1=$answers[0];
 $a2=$answers[1];
 $a3=$answers[2];
+//For question 2
+
+$query=$dbConnection->query("SELECT text FROM Answers WHERE QuestionID = 1");
+$respuestas1=$query->fetchAll(PDO::FETCH_ASSOC);
+$answer1=$respuestas1[0];
+$answer1=$respuestas1[1];
+$answer1=$respuestas1[2];
 
 
 
+//For question 3
 
 ?>
 

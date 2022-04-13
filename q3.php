@@ -1,6 +1,6 @@
 <body>
     <?php include 'header.php'?>
-    <div class="bg-image background-image" alt="">
+    <div class="bg-image background-image3" alt="">
         <div class="d-flex justify-content-center align-items-center h-100">
             <div class="text-white text-center">
             <?php echo '<h1 class="mb-3 text-center color-texto">' . $thirdQuestion['Text'] . '</h1>' ?>
