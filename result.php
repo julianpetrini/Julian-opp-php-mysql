@@ -7,7 +7,7 @@
             <div class="text-white text-center">
             <h1 class="mb-3 text-center color-texto">RESULT'S</h1>
             <?php       
-                        $a=array($_SESSION['q1'],$_SESSION['q2'],$_SESSION['q3']);
+                        $a=array($_SESSION['question1'],$_SESSION['q2'],$_SESSION['q3']);
                         //echo "esta es la suma de todo " .array_sum($a);
 
                         if (array_sum($a)==0)
@@ -21,7 +21,7 @@
 
                         $total=array_sum($a);
                     
-                        echo "<h1 class='mb-3 text-center texto-up'>This is your total points: $total/8</h1>
+                        echo "<h1 class='mb-3 text-center texto-up'>This is your total points: $total/3</h1>
                                 <div class='img-responsive'>
                                     <img src='/img/logo.png'>
                                 </div>"

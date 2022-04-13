@@ -1,5 +1,6 @@
+
+<?php include 'header.php'?>
 <body>
-    <?php include 'header.php'?>
     <div class="bg-image background-image3" alt="">
         <div class="d-flex justify-content-center align-items-center h-100">
             <div class="text-white text-center">

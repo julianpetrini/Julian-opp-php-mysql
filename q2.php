@@ -1,10 +1,10 @@
-<body>
+
     <?php include 'header.php';
     
-    $_SESSION['q1']=$_POST['q1'];
+    $_SESSION['question1']=$_POST['question1'];
 
     // JUST TO TEST IF IT WAS TAKING THE INFO  echo "This is the answer : 
-    echo $_SESSION['q1']."HOLA";
+    echo $_SESSION['question1']."HOLA";
     echo $valora1;
 
     if(isset($_POST['submit'])){
@@ -16,6 +16,7 @@
     
     
     ?>
+<body>
     <div class="bg-image background-image2" alt="">
         <div class="d-flex justify-content-center align-items-center h-100">
             <div class="text-white text-center">
