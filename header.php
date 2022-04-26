@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <html lang="en">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -10,7 +11,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
     <link rel="icon" type="imagen/png" href="img/logo.png">
+
     <!--FONTS-->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
@@ -19,6 +22,8 @@
 <!--Conection with database-->
 
 <?php 
+
+
 $dbHOST= getenv('DB_HOST');
 $dbName= getenv('DB_NAME');
 $dbUser= getenv('DB_USER');
@@ -48,7 +53,7 @@ $a1=$answers[0];
 $a2=$answers[1];
 $a3=$answers[2];
 
-$valora1=intval($a1 ['IsCorrectAnswer']);
+// HERE I TRANSFORMED INTO "INT"  // // // // $valora1=intval($a1 ['IsCorrectAnswer']);
 //For options (of answers) question 2
 $query=$dbConnection->query("SELECT * FROM Answers WHERE QuestionID = 2");
 $respuestas2=$query->fetchAll(PDO::FETCH_ASSOC);
@@ -62,6 +67,8 @@ $answer32=$respuestas3[1];
 $answer33=$respuestas3[2];
 $answer34=$respuestas3[3];
 $answer35=$respuestas3[4];
+
+
 
 ?>
 <!--NAVBAR-->

@@ -1,9 +1,6 @@
-
-
 h4,h3,h2,h1{
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Fredoka One', 'cursive';
 }
-
 .background-image{
     background-image: url('/img/bg.png');
     height: 90vh;
@@ -23,20 +20,13 @@ h4,h3,h2,h1{
 nav.color{
     background-color: #e8ac19;
 }
-
-.boton{
-
-    background:url('img/button1.png') no-repeat;
-}
-
-:hover .boton[type="submit"]{
-    background:url('img/button2.png') no-repeat;
-}
-
 .color-texto{
     color: #dc3545;
 }
-
+.final{
+    display: flex;
+    max-width: 70vw;
+}
 @media (max-width: 895px) {
     
     .color-texto{
