@@ -12,7 +12,7 @@ session_start();
 
     ?>
     <div class="bg-image background-image" alt="">
-        <div class="text-white text-center">
+        <div class="justify-content-center align-items-center h-100">
             <div class="text-white text-center">
             <h1 class="mb-3 text-center color-texto">RESULT'S</h1>
             <?php       
@@ -48,7 +48,7 @@ session_start();
                                     
                         echo "<h1 class='mb-3 text-center texto-up color-texto'>This is your total points: $total/3</h1>
                                 <div class='final'>
-                                    <img class=' rounded mx-auto d-block ' src='img/logo.png'>
+                                    <img class='final' src='img/logo.png'>
                                 </div>"
 
 
